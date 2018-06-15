@@ -1,0 +1,58 @@
+" - PLUGINS -
+
+call plug#begin('~/.vim/plugged')
+	Plug 'vim-syntastic/syntastic'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-fugitive'
+	Plug '2072/PHP-Indenting-for-VIm'
+call plug#end()
+
+filetype plugin indent on
+
+" - CONFIGURATION -
+
+"---basic things---"
+set nocompatible
+syntax enable
+set number relativenumber
+set noswapfile
+set mouse=a
+
+"---wildmenu---"
+set wildmenu
+set showcmd
+set wildignorecase
+
+"---display---"
+set cursorline
+set scrolloff=10
+set wrap
+set linebreak
+colorscheme codedark
+set list
+set listchars=tab:>-,trail:.
+
+"---indent---"
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smartindent
+set autoindent
+
+" - FUNCTIONS -
+
+function! PrintCC() "display a line at column 80
+	if (&cc == 80)
+		set cc=0
+	else
+		set cc=80
+	endif
+endfunc
+
+" - SHORTCUTS -
+
+noremap <F8>	:call PrintCC()<CR>
+noremap <S-k>	:tabprevious<CR>
+noremap <S-j>	:tabnext<CR>
+noremap <C-n>	:set relativenumber!<CR>
+noremap <C-t>	:Texplore<CR>

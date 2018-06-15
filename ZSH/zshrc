@@ -1,0 +1,66 @@
+PATH=/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/opt/bin:/usr/local/git/bin:~/bin
+
+# - ENVIRONMENT VARIABLE -
+
+export ZSH=$HOME/.oh-my-zsh
+export PATH="$PATH:$HOME/scripts"
+export MANPATH=:$HOME/man
+export EDITOR=vim
+
+# - CONFIGURATION - 
+
+ZSH_THEME="lambda"
+plugins=(git brew osx vi-mode)
+
+source $ZSH/oh-my-zsh.sh
+
+# load Homebrew config script
+if [ -e $HOME/.brewconfig.zsh ]
+then
+	source $HOME/.brewconfig.zsh
+fi
+
+# - FUNCTIONS -
+
+# coloured man pages
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}
+
+# - ALIASES -
+
+# utilitaries
+alias l='ls -lFh'
+alias la='ls -lFAh'
+alias lr='ls -tRFh'
+alias lt='ls -ltFh'
+alias h='history'
+alias p='ps -cfm'
+alias zshrc='$EDITOR ~/.zshrc'
+alias vimrc='$EDITOR ~/.vimrc'
+alias rl='source ~/.zshrc'
+
+# spotify
+alias pause='spotify pause'
+alias next='spotify next'
+alias prev='spotify prev'
+alias vol='spotify vol'
+alias np='spotify status'
+
+# scripts
+alias 42FileChecker='sh ~/42FileChecker/42FileChecker.sh'
+
+# git
+alias gls='git ls-files'
+alias gm='git commit -m'
+alias gs='git status'
+alias libft='git submodule add https://github.com/greencrow/libft.git'
+
+# gcc
+alias gccA='gcc -Wall -Wextra -Werror'
