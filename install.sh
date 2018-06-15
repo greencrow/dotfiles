@@ -16,6 +16,13 @@ rm -rf $HOME/.vim/colors
 ln -sf $BASE/VIM/vimrc $HOME/.vimrc
 ln -sf $BASE/VIM/colors $HOME/.vim/colors
 
+# nvim
+mkdir -p $HOME/.config
+rm -rf ~/.config/nvim
+ln -sf $HOME/.vim $HOME/.config/nvim
+ln -sf $BASE/VIM/vimrc $HOME/.config/nvim/init.vim
+
 # tmux
 rm -rf $HOME/.tmux.conf
 ln -sf $BASE/tmux.conf $HOME/.tmux.conf
+

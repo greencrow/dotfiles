@@ -40,11 +40,14 @@ alias l='ls -lFh'
 alias la='ls -lFAh'
 alias lr='ls -tRFh'
 alias lt='ls -ltFh'
-alias h='history'
-alias p='ps -cfm'
+alias top='htop'
 alias zshrc='$EDITOR ~/.zshrc'
 alias vimrc='$EDITOR ~/.vimrc'
 alias rl='source ~/.zshrc'
+
+# vim
+alias vim='nvim'
+alias vi='vim'
 
 # spotify
 alias pause='spotify pause'
@@ -52,9 +55,6 @@ alias next='spotify next'
 alias prev='spotify prev'
 alias vol='spotify vol'
 alias np='spotify status'
-
-# scripts
-alias 42FileChecker='sh ~/42FileChecker/42FileChecker.sh'
 
 # git
 alias gls='git ls-files'
