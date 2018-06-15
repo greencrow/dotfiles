@@ -5,9 +5,12 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-fugitive'
 	Plug '2072/PHP-Indenting-for-VIm'
+	Plug 'mattn/emmet-vim'
+	Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
 filetype plugin indent on
+let g:deoplete#enable_at_startup = 1
 
 " - CONFIGURATION -
 
