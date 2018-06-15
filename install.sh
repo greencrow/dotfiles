@@ -24,5 +24,5 @@ ln -sf $BASE/VIM/vimrc $HOME/.config/nvim/init.vim
 
 # tmux
 rm -rf $HOME/.tmux.conf
-ln -sf $BASE/tmux.conf $HOME/.tmux.conf
+ln -sf $BASE/TMUX/tmux.conf $HOME/.tmux.conf
 
