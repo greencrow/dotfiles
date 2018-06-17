@@ -6,6 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH="$PATH:$HOME/scripts"
 export MANPATH=:$HOME/man
 export EDITOR=vim
+export KEYTIMEOUT=1
 
 # - CONFIGURATION - 
 
