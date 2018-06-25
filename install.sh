@@ -7,6 +7,7 @@ rm -rf $HOME/.zshrc
 rm -rf $HOME/.shpotify.cfg
 ln -sf $BASE/ZSH/zshrc $HOME/.zshrc
 ln -sf $BASE/ZSH/shpotify.cfg $HOME/.shpotify.cfg
+cp $BASE/ZSH/themes/* $HOME/.oh-my-zsh/themes/
 
 # vim
 mkdir -p ~/.vim/autoload
