@@ -50,6 +50,9 @@ alias rl='source ~/.zshrc'
 alias vim='nvim'
 alias vi='vim'
 
+# visual studio
+alias vs='open -a /Applications/Visual\ Studio\ Code.app'
+
 # spotify
 alias pause='spotify pause'
 alias next='spotify next'
