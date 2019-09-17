@@ -27,3 +27,9 @@ ln -sf $BASE/VIM/vimrc $HOME/.config/nvim/init.vim
 rm -rf $HOME/.tmux.conf
 ln -sf $BASE/TMUX/tmux.conf $HOME/.tmux.conf
 
+# powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+sh install.sh
+cd ..
+rm -rf fonts
