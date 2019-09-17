@@ -43,7 +43,6 @@ set smartindent
 set autoindent
 
 " - FUNCTIONS -
-
 function! PrintCC() "display a line at column 80
 	if (&cc == 80)
 		set cc=0
