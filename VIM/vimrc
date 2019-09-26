@@ -42,11 +42,13 @@ set autoindent "copy the indentation of previous line
 " ============================================================================ "
 
 let mapleader = "," "define the map leader
+noremap <leader>r	:so $MYVIMRC
 noremap <S-t>		:enew<CR>
 noremap <S-k>		:bprevious<CR>
 noremap <S-j>		:bnext<CR>
 noremap <leader>w	:bd<CR>
+noremap <leader>l	:ls<CR>
 noremap <leader>n	:set relativenumber!<CR>
-map <leader>/		<plug>NERDCommenterToggle
+map 	<leader>/	<plug>NERDCommenterToggle
 noremap <leader>p	:Files<CR>
 noremap <leader>pp	:History<CR>
