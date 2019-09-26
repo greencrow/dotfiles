@@ -62,8 +62,6 @@ alias np='spotify status'
 
 # git
 alias gls='git ls-files'
-alias gm='git commit -m'
-alias gs='git status'
 alias libft='git submodule add https://github.com/greencrow/libft.git'
 
 # gcc
