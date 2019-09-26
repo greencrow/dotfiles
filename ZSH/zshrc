@@ -10,7 +10,7 @@ export KEYTIMEOUT=1
 
 # - CONFIGURATION -
 
-ZSH_THEME="classyTouch"
+ZSH_THEME="ys"
 plugins=(git brew osx vi-mode)
 
 source $ZSH/oh-my-zsh.sh
